@@ -110,16 +110,33 @@ class App extends Component {
     });
   };
 
+  lose = () => {
+      // Reset all click booleans to false (if they are true), then set score to zero
+      const resetLogoLinks = this.state.logoLinks;
+      for (let i=0; i<15; i++) {
+        if (resetLogoLinks[i].clicked === true) {
+          resetLogoLinks[i].clicked = !resetLogoLinks[i].clicked;
+        }
+      };
+
+      this.setState({
+        score: 0,
+        logoLinks: resetLogoLinks
+      })
+  };
+
   clickHandler = (index) => {
     const tempLogoLinks = this.state.logoLinks; // Create copy of entire array
     
     if (tempLogoLinks[index].clicked === true) {
-      alert("this logo has been clicked already!")
+      this.lose();
+      console.log("this logo has been clicked already!");
     } else {
       tempLogoLinks[index].clicked = !tempLogoLinks[index].clicked // Flip boolean at just one point
       // Replace state with copied and mutated state
       this.setState({
-        logoLinks: tempLogoLinks
+        logoLinks: tempLogoLinks,
+        score: this.state.score + 1
       });
     }
     
