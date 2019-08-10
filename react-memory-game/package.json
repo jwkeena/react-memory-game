@@ -2,7 +2,7 @@
   "name": "react-memory-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/jwkeena/react-memory-game",
+  "homepage": "https://jwkeena.github.com/react-memory-game",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
