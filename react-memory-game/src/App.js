@@ -125,21 +125,34 @@ class App extends Component {
       })
   };
 
+  updateTopScore = () => {
+    if (this.state.score >= this.state.topScore) {
+      this.setState({
+        topScore: this.state.score
+      });
+    };
+  }
+
   clickHandler = (index) => {
     const tempLogoLinks = this.state.logoLinks; // Create copy of entire array
     
     if (tempLogoLinks[index].clicked === true) {
       this.lose();
       console.log("this logo has been clicked already!");
+
     } else {
+      
       tempLogoLinks[index].clicked = !tempLogoLinks[index].clicked // Flip boolean at just one point
       // Replace state with copied and mutated state
+
       this.setState({
         logoLinks: tempLogoLinks,
         score: this.state.score + 1
+        }, () => { 
+          this.updateTopScore();
       });
-    }
-    
+    };
+
     this.shuffle();
   }
 
