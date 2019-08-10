@@ -97,17 +97,22 @@ class App extends Component {
   };
 
   shuffle = () => {
-    let i = this.state.logoLinks.length, j, temp;
+    let array = this.state.logoLinks; // Creating copy of current logoLinks array to not mutate the state directly
+    let i = array.length, j, temp;
     while(--i > 0) {
         j = Math.floor(Math.random()* (i+1));
-        temp = this.state.logoLinks[j];
-        this.state.logoLinks[j] = this.state.logoLinks[i];
-        this.state.logoLinks[i] = temp;
+        temp = array[j];
+        array[j] = array[i];
+        array[i] = temp;
     };
     this.setState({
-      logoLinks: this.state.logoLinks
+      logoLinks: array
     });
   };
+
+  flipClickedBoolean = (index) => {
+    this.setState({})
+  }
 
   render () {
     return (
@@ -119,7 +124,7 @@ class App extends Component {
         <div className="container">
           {this.state.logoLinks.map( (logoLink, index) => {
             return(
-              <Logo src={logoLink.src} key={logoLink.id} shuffle={this.shuffle} logoLinks={this.state.logoLinks}/>
+              <Logo src={logoLink.src} index={index} key={logoLink.id} shuffle={this.shuffle} logoLinks={this.state.logoLinks}/>
           )
           })}
         </div>
