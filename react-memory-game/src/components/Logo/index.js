@@ -2,9 +2,10 @@ import React from 'react';
 import './style.css';
 
 function Logo(props) {
+    console.log(props.index);
     return(
-        <img className="logo" src="https://jwkeena.github.io/images/logo-html.png"/>
+        <img className="logo" alt="logo" src={props.src}/>
     );
 };
 
-export default Logo
+export default Logo;
