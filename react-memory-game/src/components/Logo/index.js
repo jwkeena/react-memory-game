@@ -3,7 +3,7 @@ import './style.css';
 
 function Logo(props) {
     return(
-        <img className="logo" alt="logo" src={props.src} onClick={props.shuffle}/>
+        <img className="logo" alt="logo" src={props.src} onClick={props.clickHandler}/>
     );
 };
 

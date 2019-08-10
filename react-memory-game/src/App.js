@@ -97,7 +97,7 @@ class App extends Component {
   };
 
   shuffle = () => {
-    let array = this.state.logoLinks; // Creating copy of current logoLinks array to not mutate the state directly
+    const array = this.state.logoLinks; // Creating copy of current logoLinks array to not mutate the state directly
     let i = array.length, j, temp;
     while(--i > 0) {
         j = Math.floor(Math.random()* (i+1));
@@ -110,8 +110,20 @@ class App extends Component {
     });
   };
 
-  flipClickedBoolean = (index) => {
-    this.setState({})
+  clickHandler = (index) => {
+    const tempLogoLinks = this.state.logoLinks; // Create copy of entire array
+    
+    if (tempLogoLinks[index].clicked === true) {
+      alert("this logo has been clicked already!")
+    } else {
+      tempLogoLinks[index].clicked = !tempLogoLinks[index].clicked // Flip boolean at just one point
+      // Replace state with copied and mutated state
+      this.setState({
+        logoLinks: tempLogoLinks
+      });
+    }
+    
+    this.shuffle();
   }
 
   render () {
@@ -124,7 +136,7 @@ class App extends Component {
         <div className="container">
           {this.state.logoLinks.map( (logoLink, index) => {
             return(
-              <Logo src={logoLink.src} index={index} key={logoLink.id} shuffle={this.shuffle} logoLinks={this.state.logoLinks}/>
+              <Logo src={logoLink.src} key={logoLink.id} shuffle={this.shuffle} logoLinks={this.state.logoLinks} clickHandler={() => this.clickHandler(index)}/> // Must use anonymous arrow function wrapper to pass the index as a parameter--otherwise the function is called upon render
           )
           })}
         </div>
