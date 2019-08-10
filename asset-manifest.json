@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jwkeena/react-memory-game/static/css/main.fffa0c2d.chunk.css",
+    "main.css": "/jwkeena/react-memory-game/static/css/main.2654f3c2.chunk.css",
     "main.js": "/jwkeena/react-memory-game/static/js/main.3524a27a.chunk.js",
     "main.js.map": "/jwkeena/react-memory-game/static/js/main.3524a27a.chunk.js.map",
     "runtime~main.js": "/jwkeena/react-memory-game/static/js/runtime~main.58b325fd.js",
@@ -8,8 +8,9 @@
     "static/js/2.9918f956.chunk.js": "/jwkeena/react-memory-game/static/js/2.9918f956.chunk.js",
     "static/js/2.9918f956.chunk.js.map": "/jwkeena/react-memory-game/static/js/2.9918f956.chunk.js.map",
     "index.html": "/jwkeena/react-memory-game/index.html",
-    "precache-manifest.234c32d7e6faecd638d7a7c3f55cc616.js": "/jwkeena/react-memory-game/precache-manifest.234c32d7e6faecd638d7a7c3f55cc616.js",
+    "precache-manifest.c51728b50206919f7c6d3a84620904a3.js": "/jwkeena/react-memory-game/precache-manifest.c51728b50206919f7c6d3a84620904a3.js",
     "service-worker.js": "/jwkeena/react-memory-game/service-worker.js",
-    "static/css/main.fffa0c2d.chunk.css.map": "/jwkeena/react-memory-game/static/css/main.fffa0c2d.chunk.css.map"
+    "static/css/main.2654f3c2.chunk.css.map": "/jwkeena/react-memory-game/static/css/main.2654f3c2.chunk.css.map",
+    "static/media/style.css": "/jwkeena/react-memory-game/static/media/portal.8d8e7967.gif"
   }
 }
