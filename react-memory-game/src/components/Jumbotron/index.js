@@ -5,8 +5,8 @@ function Jumbotron() {
     return (
         <div className="jumbotron jumbotron-fluid">
             <div className="container">
-                <h1 className="display-4">&nbsp;</h1>
                 <p className="lead">&nbsp;</p>
+                <h1 className="display-4">TECH STACK MEMORY GAME</h1>
             </div>
         </div>
     );

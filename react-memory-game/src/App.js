@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header/index';
+import Footer from './components/Footer/';
 import Jumbotron from './components/Jumbotron/index'
 import Logo from './components/Logo/index'
 import './App.css';
@@ -148,7 +149,7 @@ class App extends Component {
       this.setState({
         logoLinks: tempLogoLinks,
         score: this.state.score + 1
-        }, () => { 
+        }, () => { // Must run updateTopScore in a callback because setState is asynchronous
           this.updateTopScore();
       });
     };
@@ -170,6 +171,7 @@ class App extends Component {
           )
           })}
         </div>
+        <Footer/>
       </div>
     );
   }
