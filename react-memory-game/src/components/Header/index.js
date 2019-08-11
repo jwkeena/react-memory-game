@@ -11,9 +11,6 @@ function Header(props) {
 
         <div className="collapse navbar-collapse mr-auto">
             <ul className="navbar-nav">
-            <li className="nav-item active">
-                <a className="nav-link" href='#!' onClick={props.resetGameState}>RESET</a>
-            </li>
             <li>
                 <a className="nav-link" href="#!" data-toggle="popover" title="How to play" data-content="Click any logo to begin. Each logo may only be clicked once. Each unique click earns a point, and each duplicate click resets the game." data-placement="bottom">RULES</a>
             </li>

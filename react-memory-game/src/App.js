@@ -8,6 +8,7 @@ import './App.css';
 class App extends Component {
   
   state = {
+    justLost: false,
     score: 0,
     topScore: 0,
     logoLinks: [
@@ -89,14 +90,6 @@ class App extends Component {
     ]
   }
 
-  resetGameState = () => {
-    console.log("clicked")
-    this.setState({
-      score: 0,
-      topScore: 0
-    });
-  };
-
   shuffle = () => {
     const array = this.state.logoLinks; // Creating copy of current logoLinks array to not mutate the state directly
     let i = array.length, j, temp;
@@ -122,7 +115,8 @@ class App extends Component {
 
       this.setState({
         score: 0,
-        logoLinks: resetLogoLinks
+        logoLinks: resetLogoLinks,
+        justLost: true
       })
   };
 
@@ -142,11 +136,11 @@ class App extends Component {
       console.log("this logo has been clicked already!");
 
     } else {
-      
+
       tempLogoLinks[index].clicked = !tempLogoLinks[index].clicked // Flip boolean at just one point
       // Replace state with copied and mutated state
-
       this.setState({
+        justLost: false,
         logoLinks: tempLogoLinks,
         score: this.state.score + 1
         }, () => { // Must run updateTopScore in a callback because setState is asynchronous
@@ -167,9 +161,9 @@ class App extends Component {
         <div className="container">
           {this.state.logoLinks.map( (logoLink, index) => {
             return(
-              <Logo src={logoLink.src} key={logoLink.id} shuffle={this.shuffle} logoLinks={this.state.logoLinks} clickHandler={() => this.clickHandler(index)}/> // Must use anonymous arrow function wrapper to pass the index as a parameter--otherwise the function is called upon render
-          )
-          })}
+                <Logo justLost={this.state.justLost} src={logoLink.src} key={logoLink.id} shuffle={this.shuffle} logoLinks={this.state.logoLinks} clickHandler={() => this.clickHandler(index)}/> 
+                )
+              })}
         </div>
         <Footer/>
       </div>
