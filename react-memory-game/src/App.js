@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import Header from './components/Header/index';
+import Header from './components/Header/';
 import Footer from './components/Footer/';
-import Jumbotron from './components/Jumbotron/index'
-import Logo from './components/Logo/index'
+import Jumbotron from './components/Jumbotron/';
+import Logo from './components/Logo/';
 import './App.css';
 
 class App extends Component {
   
   state = {
+    maxScoreReached: false,
     justLost: false,
     score: 0,
     topScore: 0,
@@ -128,6 +129,14 @@ class App extends Component {
     };
   }
 
+  maxScoreCheck = () => {
+    if (this.state.score === 15) {
+      this.setState({
+        maxScoreReached: true
+      });
+    };
+  };
+
   clickHandler = (index) => {
     const tempLogoLinks = this.state.logoLinks; // Create copy of entire array
     
@@ -145,6 +154,7 @@ class App extends Component {
         score: this.state.score + 1
         }, () => { // Must run updateTopScore in a callback because setState is asynchronous
           this.updateTopScore();
+          this.maxScoreCheck();
       });
     };
 
@@ -157,7 +167,7 @@ class App extends Component {
         <Header
           resetGameState={this.resetGameState} score={this.state.score} topScore={this.state.topScore}
         />
-        <Jumbotron/>
+        <Jumbotron maxScoreReached={this.state.maxScoreReached}/>
         <div className="container">
           {this.state.logoLinks.map( (logoLink, index) => {
             return(

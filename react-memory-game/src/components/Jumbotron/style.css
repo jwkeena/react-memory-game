@@ -8,3 +8,26 @@
   text-align: center;
   font-weight: 350;
 }
+
+@keyframes rainbow {
+  from {
+      filter: hue-rotate(0deg);
+      -webkit-filter: hue-rotate(0deg);
+      -moz-filter: hue-rotate(0deg);
+      -o-filter: hue-rotate(0deg);
+  }
+  to {
+      filter: hue-rotate(360deg);
+      -webkit-filter: hue-rotate(360deg);
+      -moz-filter: hue-rotate(360deg);
+      -o-filter: hue-rotate(360deg);
+  }
+}
+
+.holographic {
+  animation: rainbow .25s steps(36) infinite;
+  -webkit-animation: rainbow .25s steps(36) infinite;
+  -moz-animation: rainbow .25s steps(36) infinite;
+  -o-animation: rainbow .25s steps(36) infinite;
+  font-weight: bold;
+}
