@@ -10,4 +10,4 @@ A front-end app built for practice with foundational React concepts: components,
 # try it yourself!
 https://jwkeena.github.io/react-memory-game/
 
-![](react-memory-game.gif)
+![](react-memory-game-demo.gif)
