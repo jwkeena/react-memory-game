@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-memory-game/static/css/main.8c103dd3.chunk.css",
-    "main.js": "/react-memory-game/static/js/main.8fcc7738.chunk.js",
-    "main.js.map": "/react-memory-game/static/js/main.8fcc7738.chunk.js.map",
+    "main.css": "/react-memory-game/static/css/main.35756c6a.chunk.css",
+    "main.js": "/react-memory-game/static/js/main.84c19f7b.chunk.js",
+    "main.js.map": "/react-memory-game/static/js/main.84c19f7b.chunk.js.map",
     "runtime~main.js": "/react-memory-game/static/js/runtime~main.83a7a993.js",
     "runtime~main.js.map": "/react-memory-game/static/js/runtime~main.83a7a993.js.map",
-    "static/js/2.2e886be9.chunk.js": "/react-memory-game/static/js/2.2e886be9.chunk.js",
-    "static/js/2.2e886be9.chunk.js.map": "/react-memory-game/static/js/2.2e886be9.chunk.js.map",
+    "static/js/2.828b7523.chunk.js": "/react-memory-game/static/js/2.828b7523.chunk.js",
+    "static/js/2.828b7523.chunk.js.map": "/react-memory-game/static/js/2.828b7523.chunk.js.map",
     "index.html": "/react-memory-game/index.html",
-    "precache-manifest.18dbab5fd79b4144b62c8e6046acbf87.js": "/react-memory-game/precache-manifest.18dbab5fd79b4144b62c8e6046acbf87.js",
+    "precache-manifest.8748a1030c5cac6d5173a4c151abb2d5.js": "/react-memory-game/precache-manifest.8748a1030c5cac6d5173a4c151abb2d5.js",
     "service-worker.js": "/react-memory-game/service-worker.js",
-    "static/css/main.8c103dd3.chunk.css.map": "/react-memory-game/static/css/main.8c103dd3.chunk.css.map",
+    "static/css/main.35756c6a.chunk.css.map": "/react-memory-game/static/css/main.35756c6a.chunk.css.map",
     "static/media/style.css": "/react-memory-game/static/media/portal.8d8e7967.gif"
   }
 }
