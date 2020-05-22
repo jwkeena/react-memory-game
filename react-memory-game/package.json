@@ -2,7 +2,7 @@
   "name": "react-memory-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jwkeena.github.com/react-memory-game",
+  "homepage": "https://jwkeena.github.io/react-memory-game",
   "dependencies": {
     "aphrodite": "^2.4.0",
     "gh-pages": "^2.1.1",
