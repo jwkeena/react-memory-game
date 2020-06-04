@@ -15,77 +15,77 @@ class App extends Component {
     logoLinks: [
       {
         id: 1,
-        src: "https://jwkeena.github.io/images/logo-html.png",
+        src: "https://jwkeena.github.io/assets/images/logo-html.png",
         clicked: false
       },
       {
         id: 2,
-        src: "https://jwkeena.github.io/images/logo-postman.png",
+        src: "https://jwkeena.github.io/assets/images/logo-postman.png",
         clicked: false
       },
       {
         id: 3,
-        src: "https://jwkeena.github.io/images/logo-firebase.png",
+        src: "https://jwkeena.github.io/assets/images/logo-firebase.png",
         clicked: false
       },
       {
         id: 4,
-        src: "https://jwkeena.github.io/images/logo-materialize.png",
+        src: "https://jwkeena.github.io/assets/images/logo-materialize.png",
         clicked: false
       },
       {
         id: 5,
-        src: "https://jwkeena.github.io/images/logo-js.png",
+        src: "https://jwkeena.github.io/assets/images/logo-js.png",
         clicked: false
       },
       {
         id: 6,
-        src: "https://jwkeena.github.io/images/logo-mongodb.png",
+        src: "https://jwkeena.github.io/assets/images/logo-mongodb.png",
         clicked: false
       },
       {
         id: 7,
-        src: "https://jwkeena.github.io/images/logo-node.png",
+        src: "https://jwkeena.github.io/assets/images/logo-node.png",
         clicked: false
       },
       {
         id: 8,
-        src: "https://jwkeena.github.io/images/logo-css.png",
+        src: "https://jwkeena.github.io/assets/images/logo-css.png",
         clicked: false
       },
       {
         id: 9,
-        src: "https://jwkeena.github.io/images/logo-sequelize.png",
+        src: "https://jwkeena.github.io/assets/images/logo-sequelize.png",
         clicked: false
       },
       {
         id: 10,
-        src: "https://jwkeena.github.io/images/logo-jquery.png",
+        src: "https://jwkeena.github.io/assets/images/logo-jquery.png",
         clicked: false
       },
       {
         id: 11,
-        src: "https://jwkeena.github.io/images/logo-react.png",
+        src: "https://jwkeena.github.io/assets/images/logo-react.png",
         clicked: false
       },
       {
         id: 12,
-        src: "https://jwkeena.github.io/images/logo-bootstrap.png",
+        src: "https://jwkeena.github.io/assets/images/logo-bootstrap.png",
         clicked: false
       },
       {
         id: 13,
-        src: "https://jwkeena.github.io/images/logo-bash.png",
+        src: "https://jwkeena.github.io/assets/images/logo-bash.png",
         clicked: false
       },
       {
         id: 14,
-        src: "https://jwkeena.github.io/images/logo-mysql.png",
+        src: "https://jwkeena.github.io/assets/images/logo-mysql.png",
         clicked: false
       },
       {
         id: 15,
-        src: "https://jwkeena.github.io/images/logo-xml.png",
+        src: "https://jwkeena.github.io/assets/images/logo-xml.png",
         clicked: false
       }
     ]
